@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Відгуки | Beauty room by Kostenko Cosmetology</title>
+  <meta name="description" content="Відгуки та сторіс простору краси Beauty room by Kostenko Cosmetology у Дніпрі дивіться в Instagram.">
+  <meta name="theme-color" content="#236B52">
+
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="uk_UA">
+  <meta property="og:site_name" content="Простір краси «Beauty room by Kostenko Cosmetology»">
+  <meta property="og:title" content="Відгуки">
+  <meta property="og:description" content="Відгуки та сторіс простору краси Beauty room by Kostenko Cosmetology у Дніпрі дивіться в Instagram.">
+  <!-- TODO: после выбора домена добавить og:url, og:image (абсолютные адреса) и canonical -->
+
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Commissioner:wght@400;500;600&family=Oranienbaum&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+
+  <script>document.documentElement.classList.add('js');</script>
+  <script src="js/main.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Перейти до змісту</a>
+
+  <!-- Шапка: одинаковая на всех 5 страницах, меняется только aria-current -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="logo" href="index.html">
+        <img src="images/logo.png" alt="Beauty room by Kostenko Cosmetology, на головну" width="1800" height="1800">
+      </a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
+        <span class="nav-toggle-bars" aria-hidden="true"></span>
+        <span class="visually-hidden">Меню</span>
+      </button>
+      <nav class="site-nav" id="site-nav" aria-label="Основне меню">
+        <ul>
+          <li><a href="index.html">Головна</a></li>
+          <li><a href="cosmetology.html">Косметологія</a></li>
+          <li><a href="massage.html">Масаж</a></li>
+          <li><a href="reviews.html" aria-current="page">Відгуки</a></li>
+          <li><a href="contacts.html">Контакти</a></li>
+        </ul>
+      </nav>
+      <a class="btn btn-gold header-cta" href="https://www.instagram.com/kosmetolog__kostenko" target="_blank" rel="noopener">Записатися</a>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="section">
+      <div class="container lead-block">
+        <h1>Відгуки</h1>
+        <p>Актуальні відгуки та сторіс дивіться в&nbsp;нашому Instagram.</p>
+        <a class="btn btn-primary" href="https://www.instagram.com/kosmetolog__kostenko" target="_blank" rel="noopener">Більше в Instagram</a>
+      </div>
+    </section>
+
+    <!-- Блок скрыт, пока нет реальных отзывов с разрешением на публикацию.
+         Каждый отзыв: <figure class="review"><blockquote></blockquote><figcaption></figcaption></figure>
+         Когда отзывы добавлены, убрать атрибут hidden. -->
+    <section class="section section-mint" aria-labelledby="reviews-list-title" hidden>
+      <div class="container">
+        <h2 id="reviews-list-title">Відгуки клієнтів</h2>
+        <div class="reviews-grid"></div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Футер: одинаковый на всех 5 страницах, меняется только aria-current -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div>
+        <p class="footer-name">Простір краси<br><span lang="en">Beauty room by Kostenko Cosmetology</span></p>
+      </div>
+      <nav aria-label="Меню в підвалі">
+        <ul>
+          <li><a href="index.html">Головна</a></li>
+          <li><a href="cosmetology.html">Косметологія</a></li>
+          <li><a href="massage.html">Масаж</a></li>
+          <li><a href="reviews.html" aria-current="page">Відгуки</a></li>
+          <li><a href="contacts.html">Контакти</a></li>
+        </ul>
+      </nav>
+      <div class="footer-contacts">
+        <address>м.&nbsp;Дніпро, вул. Михайла Грушевського, 16</address>
+        <!-- TODO: при необходимости добавить точные часы -->
+        <p>За попереднім записом</p>
+        <p><a href="https://www.instagram.com/kosmetolog__kostenko" target="_blank" rel="noopener">Instagram</a></p>
+        <!-- TODO: Telegram — раскомментировать, когда будет ссылка
+        <a href="https://t.me/...">Telegram</a> -->
+        <!-- TODO: телефон — раскомментировать, когда будет номер
+        <a href="tel:+380...">+380 ...</a> -->
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
