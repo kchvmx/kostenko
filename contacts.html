@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Контакти та запис | Beauty room by Kostenko Cosmetology</title>
+  <meta name="description" content="Дніпро, вул. Михайла Грушевського, 16. За попереднім записом. Запис в Instagram.">
+  <meta name="theme-color" content="#236B52">
+
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="uk_UA">
+  <meta property="og:site_name" content="Простір краси «Beauty room by Kostenko Cosmetology»">
+  <meta property="og:title" content="Контакти та запис">
+  <meta property="og:description" content="Дніпро, вул. Михайла Грушевського, 16. За попереднім записом. Запис в Instagram.">
+  <!-- TODO: после выбора домена добавить og:url, og:image (абсолютные адреса) и canonical -->
+
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Commissioner:wght@400;500;600&family=Oranienbaum&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+
+  <script>document.documentElement.classList.add('js');</script>
+  <script src="js/main.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Перейти до змісту</a>
+
+  <!-- Шапка: одинаковая на всех 5 страницах, меняется только aria-current -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="logo" href="index.html">
+        <img src="images/logo.png" alt="Beauty room by Kostenko Cosmetology, на головну" width="1800" height="1800">
+      </a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
+        <span class="nav-toggle-bars" aria-hidden="true"></span>
+        <span class="visually-hidden">Меню</span>
+      </button>
+      <nav class="site-nav" id="site-nav" aria-label="Основне меню">
+        <ul>
+          <li><a href="index.html">Головна</a></li>
+          <li><a href="cosmetology.html">Косметологія</a></li>
+          <li><a href="massage.html">Масаж</a></li>
+          <li><a href="reviews.html">Відгуки</a></li>
+          <li><a href="contacts.html" aria-current="page">Контакти</a></li>
+        </ul>
+      </nav>
+      <a class="btn btn-gold header-cta" href="https://www.instagram.com/kosmetolog__kostenko" target="_blank" rel="noopener">Записатися</a>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="section section-mint contacts-page" aria-labelledby="contacts-title">
+      <div class="container contacts">
+        <div class="contacts-info">
+          <h1 id="contacts-title">Контакти</h1>
+          <dl>
+            <dt>Адреса</dt>
+            <dd><address>м.&nbsp;Дніпро, вул. Михайла Грушевського, 16</address></dd>
+            <dt>Графік роботи</dt>
+            <!-- TODO: при необходимости добавить точные часы -->
+            <dd class="schedule">За попереднім записом</dd>
+            <dt>Запис</dt>
+            <dd><a href="https://www.instagram.com/kosmetolog__kostenko" target="_blank" rel="noopener">Instagram @kosmetolog__kostenko</a></dd>
+          </dl>
+          <!-- TODO: Telegram — раскомментировать, когда будет ссылка
+          <a href="https://t.me/...">Telegram</a> -->
+          <!-- TODO: телефон — раскомментировать, когда будет номер
+          <a href="tel:+380...">+380 ...</a> -->
+          <a class="btn btn-primary" href="https://www.instagram.com/kosmetolog__kostenko" target="_blank" rel="noopener">Записатися</a>
+        </div>
+        <div class="map">
+          <iframe src="https://www.google.com/maps?q=%D0%94%D0%BD%D1%96%D0%BF%D1%80%D0%BE%2C%20%D0%B2%D1%83%D0%BB.%20%D0%9C%D0%B8%D1%85%D0%B0%D0%B9%D0%BB%D0%B0%20%D0%93%D1%80%D1%83%D1%88%D0%B5%D0%B2%D1%81%D1%8C%D0%BA%D0%BE%D0%B3%D0%BE%2C%2016&amp;hl=uk&amp;output=embed" title="Карта: Дніпро, вул. Михайла Грушевського, 16" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Футер: одинаковый на всех 5 страницах, меняется только aria-current -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div>
+        <p class="footer-name">Простір краси<br><span lang="en">Beauty room by Kostenko Cosmetology</span></p>
+      </div>
+      <nav aria-label="Меню в підвалі">
+        <ul>
+          <li><a href="index.html">Головна</a></li>
+          <li><a href="cosmetology.html">Косметологія</a></li>
+          <li><a href="massage.html">Масаж</a></li>
+          <li><a href="reviews.html">Відгуки</a></li>
+          <li><a href="contacts.html" aria-current="page">Контакти</a></li>
+        </ul>
+      </nav>
+      <div class="footer-contacts">
+        <address>м.&nbsp;Дніпро, вул. Михайла Грушевського, 16</address>
+        <!-- TODO: при необходимости добавить точные часы -->
+        <p>За попереднім записом</p>
+        <p><a href="https://www.instagram.com/kosmetolog__kostenko" target="_blank" rel="noopener">Instagram</a></p>
+        <!-- TODO: Telegram — раскомментировать, когда будет ссылка
+        <a href="https://t.me/...">Telegram</a> -->
+        <!-- TODO: телефон — раскомментировать, когда будет номер
+        <a href="tel:+380...">+380 ...</a> -->
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

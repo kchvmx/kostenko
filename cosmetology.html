@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Косметологія в Дніпрі: послуги та ціни | Beauty room by Kostenko Cosmetology</title>
+  <meta name="description" content="Прайс косметолога в центрі Дніпра: чистки та догляди, пілінги, ін’єкційна та апаратна косметологія.">
+  <meta name="theme-color" content="#236B52">
+
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="uk_UA">
+  <meta property="og:site_name" content="Простір краси «Beauty room by Kostenko Cosmetology»">
+  <meta property="og:title" content="Косметологія: послуги та ціни">
+  <meta property="og:description" content="Прайс косметолога в центрі Дніпра: чистки та догляди, пілінги, ін’єкційна та апаратна косметологія.">
+  <!-- TODO: после выбора домена добавить og:url, og:image (абсолютные адреса) и canonical -->
+
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Commissioner:wght@400;500;600&family=Oranienbaum&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+
+  <script>document.documentElement.classList.add('js');</script>
+  <script src="js/main.js" defer></script>
+  <script src="js/catalog.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Перейти до змісту</a>
+
+  <!-- Шапка: одинаковая на всех 5 страницах, меняется только aria-current -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="logo" href="index.html">
+        <img src="images/logo.png" alt="Beauty room by Kostenko Cosmetology, на головну" width="1800" height="1800">
+      </a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
+        <span class="nav-toggle-bars" aria-hidden="true"></span>
+        <span class="visually-hidden">Меню</span>
+      </button>
+      <nav class="site-nav" id="site-nav" aria-label="Основне меню">
+        <ul>
+          <li><a href="index.html">Головна</a></li>
+          <li><a href="cosmetology.html" aria-current="page">Косметологія</a></li>
+          <li><a href="massage.html">Масаж</a></li>
+          <li><a href="reviews.html">Відгуки</a></li>
+          <li><a href="contacts.html">Контакти</a></li>
+        </ul>
+      </nav>
+      <a class="btn btn-gold header-cta" href="https://www.instagram.com/kosmetolog__kostenko" target="_blank" rel="noopener">Записатися</a>
+    </div>
+  </header>
+
+  <main id="main">
+    <div class="page-head">
+      <div class="container narrow">
+        <h1>Косметологія</h1>
+        <p>Естетична, ін’єкційна та апаратна косметологія в&nbsp;центрі Дніпра.</p>
+        <p>Костенко Юлія, косметолог. <span class="edu">Вища медична освіта</span></p>
+        <a class="btn btn-primary" href="https://www.instagram.com/kosmetolog__kostenko" target="_blank" rel="noopener">Записатися</a>
+      </div>
+    </div>
+
+    <div class="container narrow catalog">
+      <nav class="tabs" id="catalog" data-tabs="aesthetic" aria-label="Розділи прайсу">
+        <a class="tab" href="#consultations">Консультації</a>
+        <a class="tab" href="#aesthetic">Естетична</a>
+        <a class="tab" href="#peelings">Пілінги</a>
+        <a class="tab" href="#injections">Ін’єкційна</a>
+        <a class="tab" href="#apparatus">Апаратна</a>
+      </nav>
+
+      <section class="tab-panel" id="consultations">
+        <h2>Консультації</h2>
+        <details class="acc" open>
+          <summary><h3>Консультації косметолога</h3></summary>
+          <div class="acc-body">
+            <ul class="price-list">
+              <li><span class="service">Консультація очна <span class="service-meta">до 60 хв</span></span> <span class="price" data-price-id="consult-in-person">800&nbsp;грн</span></li>
+              <li><span class="service">Консультація щодо підбору домашнього догляду та підбір домашнього догляду</span> <span class="price" data-price-id="consult-homecare">800&nbsp;грн</span></li>
+            </ul>
+            <p class="term">Якщо процедуру виконують у день консультації, її вартість входить у вартість процедури.</p>
+          </div>
+        </details>
+        <p class="panel-cta"><a class="btn btn-primary" href="https://www.instagram.com/kosmetolog__kostenko" target="_blank" rel="noopener">Записатися</a></p>
+      </section>
+
+      <section class="tab-panel" id="aesthetic">
+        <h2>Естетична косметологія</h2>
+        <details class="acc" open>
+          <summary><h3>Чистки обличчя</h3></summary>
+          <div class="acc-body">
+            <p>До чистки обличчя входить: скрабування, ультразвукове та механічне очищення, три маски за типом шкіри, сироватка.</p>
+            <ul class="price-list">
+              <li><span class="service">Чистка комбінована (Holy Land, Institut Esthederm) <span class="service-meta">1,5 год</span></span> <span class="price" data-price-id="clean-combined">1&nbsp;500&nbsp;грн</span></li>
+              <li><span class="service">Чистка комбінована + пілінг поверхневий за типом шкіри</span> <span class="price" data-price-id="clean-peel-surface">1&nbsp;900&nbsp;грн</span></li>
+              <li><span class="service">Чистка комбінована + пілінг серединний за типом шкіри <span class="service-meta">до 2 год</span></span> <span class="price" data-price-id="clean-peel-medium">2&nbsp;500&nbsp;грн</span></li>
+              <li><span class="service">Чистка комбінована + карбокситерапія <span class="service-meta">2 год</span></span> <span class="price" data-price-id="clean-carboxy">2&nbsp;800&nbsp;грн</span></li>
+              <li><span class="service">Карбокситерапевтичний догляд <span class="service-meta">1,5 год</span></span> <span class="price" data-price-id="carboxy-care">1&nbsp;900&nbsp;грн</span></li>
+              <li><span class="service">Чистка спини <span class="service-meta">2,5 год</span></span> <span class="price" data-price-id="clean-back">1&nbsp;500–2&nbsp;000&nbsp;грн</span></li>
+              <li><span class="service">Пілінг спини (доплата до чистки спини)</span> <span class="price" data-price-id="clean-back-peel">+1&nbsp;500&nbsp;грн</span></li>
+            </ul>
+          </div>
+        </details>
+        <details class="acc">
+          <summary><h3>Апаратні очищення та догляди</h3></summary>
+          <div class="acc-body">
+            <ul class="price-list">
+              <li><span class="service">Чистка апаратна HYDRAFACIAL на основі сироваток, «3&nbsp;в&nbsp;1» (чистка, пілінг, догляд) <span class="service-meta">атравматична, 10 етапів · 1,5 год</span></span> <span class="price" data-price-id="hw-hydrafacial">2&nbsp;500&nbsp;грн</span></li>
+              <li><span class="service">Алмазна мікродермабразія + сироватка + маска <span class="service-meta">1 год</span></span> <span class="price" data-price-id="hw-diamond">1&nbsp;300&nbsp;грн</span></li>
+              <li><span class="service">Гідропілінг сироватками + сироватка + маска <span class="service-meta">1 год</span></span> <span class="price" data-price-id="hw-hydropeel">1&nbsp;500&nbsp;грн</span></li>
+              <li><span class="service">Кріомасаж + маска <span class="service-meta">1 год</span></span> <span class="price" data-price-id="hw-cryomassage">1&nbsp;500&nbsp;грн</span></li>
+            </ul>
+          </div>
+        </details>
+        <details class="acc">
+          <summary><h3>Професійні догляди</h3></summary>
+          <div class="acc-body">
+            <h4>Casmara (Іспанія)</h4>
+            <p>Киснево-насичувальний догляд Purifying, 8 етапів.</p>
+            <ul class="price-list">
+              <li><span class="service">Догляд <span class="service-meta">1 год</span></span> <span class="price" data-price-id="care-casmara">2&nbsp;500&nbsp;грн</span></li>
+              <li><span class="service">Догляд + чистка комбінована <span class="service-meta">1,5 год</span></span> <span class="price" data-price-id="care-casmara-clean">2&nbsp;800&nbsp;грн</span></li>
+            </ul>
+            <h4>iS CLINICAL (США)</h4>
+            <p>Процедура «Червона доріжка» або «Вогонь і лід».</p>
+            <ul class="price-list">
+              <li><span class="service">+ легке очищення</span> <span class="price" data-price-id="care-isclinical-light">2&nbsp;500&nbsp;грн</span></li>
+              <li><span class="service">+ чистка комбінована</span> <span class="price" data-price-id="care-isclinical-clean">2&nbsp;800&nbsp;грн</span></li>
+            </ul>
+            <h4>Institut Esthederm «Cocon»</h4>
+            <p>Спрямований на живлення та зволоження, 7 етапів.</p>
+            <ul class="price-list">
+              <li><span class="service">Догляд <span class="service-meta">1 год</span></span> <span class="price" data-price-id="care-cocon">1&nbsp;900&nbsp;грн</span></li>
+            </ul>
+            <h4>Holy Land «Лактолан»</h4>
+            <p>Спрямований на освітлення та зволоження; для шкіри з висипами та постакне.</p>
+            <ul class="price-list">
+              <li><span class="service">Догляд <span class="service-meta">1 год</span></span> <span class="price" data-price-id="care-lactolan">1&nbsp;900&nbsp;грн</span></li>
+              <li><span class="service">Догляд + пілінг серединний</span> <span class="price" data-price-id="care-lactolan-peel">2&nbsp;500&nbsp;грн</span></li>
+            </ul>
+            <h4>DMK ферментотерапія (США)</h4>
+            <ul class="price-list">
+              <li><span class="service">Enzyme Masque №1 + Enzyme Masque №2</span> <span class="price" data-price-id="care-dmk-two">2&nbsp;500&nbsp;грн</span></li>
+              <li><span class="service">Три маски</span> <span class="price" data-price-id="care-dmk-three">2&nbsp;800&nbsp;грн</span></li>
+            </ul>
+          </div>
+        </details>
+        <p class="panel-cta"><a class="btn btn-primary" href="https://www.instagram.com/kosmetolog__kostenko" target="_blank" rel="noopener">Записатися</a></p>
+      </section>
+
+      <section class="tab-panel" id="peelings">
+        <h2>Пілінги</h2>
+        <details class="acc" open>
+          <summary><h3>Пілінги як окрема процедура</h3></summary>
+          <div class="acc-body">
+            <p>Тривалість 1 год. У вартість входять зволожувальна маска та сироватка.</p>
+            <ul class="price-list">
+              <li><span class="service">Alpha-Beta Retinol (Ізраїль) <span class="service-meta">1 год</span></span> <span class="price" data-price-id="peel-alpha-beta">1&nbsp;500&nbsp;грн</span></li>
+              <li><span class="service">Ензимний Obagi (США) <span class="service-meta">1 год</span></span> <span class="price" data-price-id="peel-obagi">1&nbsp;500&nbsp;грн</span></li>
+              <li><span class="service">PRX-T33 (Італія) <span class="service-meta">1 год</span></span> <span class="price" data-price-id="peel-prx-t33">1&nbsp;900&nbsp;грн</span></li>
+              <li><span class="service">Apreex (Італія) <span class="service-meta">1 год</span></span> <span class="price" data-price-id="peel-apreex">1&nbsp;900&nbsp;грн</span></li>
+              <li><span class="service">BioRePeel (Італія) <span class="service-meta">1 год</span></span> <span class="price" data-price-id="peel-biorepeel">1&nbsp;900&nbsp;грн</span></li>
+              <li><span class="service">Jalupro Glow Peel (Італія) <span class="service-meta">1 год</span></span> <span class="price" data-price-id="peel-jalupro">1&nbsp;900&nbsp;грн</span></li>
+              <li><span class="service">Image (США) <span class="service-meta">1 год</span></span> <span class="price" data-price-id="peel-image">1&nbsp;900&nbsp;грн</span></li>
+              <li><span class="service">MCA 35 (Іспанія) <span class="service-meta">1 год</span></span> <span class="price" data-price-id="peel-mca35">1&nbsp;900&nbsp;грн</span></li>
+              <li><span class="service">Жовтий пілінг (Італія) <span class="service-meta">1 год</span></span> <span class="price" data-price-id="peel-yellow">1&nbsp;900&nbsp;грн</span></li>
+              <li><span class="service">Peptiglow (Італія) <span class="service-meta">1 год</span></span> <span class="price" data-price-id="peel-peptiglow">1&nbsp;900&nbsp;грн</span></li>
+            </ul>
+            <p class="term">За потреби підключаємо дермапен: <span class="price" data-price-id="peel-dermapen">+500&nbsp;грн</span>.</p>
+            <p class="term"><strong>Знижка −20%:</strong> якщо пілінг як доповнююча процедура або при оплаті курсу від 3 процедур одразу.</p>
+          </div>
+        </details>
+        <p class="panel-cta"><a class="btn btn-primary" href="https://www.instagram.com/kosmetolog__kostenko" target="_blank" rel="noopener">Записатися</a></p>
+      </section>
+
+      <section class="tab-panel" id="injections">
+        <h2>Ін’єкційна косметологія</h2>
+        <details class="acc" open>
+          <summary><h3>Аугментація губ</h3></summary>
+          <div class="acc-body">
+            <ul class="price-list">
+              <li><span class="service">Juvederm Ultra Smile (США) <span class="service-meta">0,55 мл</span></span> <span class="price" data-price-id="lips-juvederm-smile">5&nbsp;800&nbsp;грн</span></li>
+              <li><span class="service">Teosyal RHA Kiss <span class="service-meta">0,7 мл</span></span> <span class="price" data-price-id="lips-teosyal-kiss">8&nbsp;500&nbsp;грн</span></li>
+              <li><span class="service">Stylage M (Франція) <span class="service-meta">1 мл</span></span> <span class="price" data-price-id="lips-stylage-m">6&nbsp;900&nbsp;грн</span></li>
+              <li><span class="service">Aileene Vol.2 (Корея) <span class="service-meta">1 мл</span></span> <span class="price" data-price-id="lips-aileene">5&nbsp;500&nbsp;грн</span></li>
+              <li><span class="service">Revolax (Корея) <span class="service-meta">1,1 мл</span></span> <span class="price" data-price-id="lips-revolax">5&nbsp;000&nbsp;грн</span></li>
+              <li><span class="service">Celosome (Корея) <span class="service-meta">1,1 мл</span></span> <span class="price" data-price-id="lips-celosome">4&nbsp;800&nbsp;грн</span></li>
+            </ul>
+            <p>За бажанням можна замовити інші філери.</p>
+            <h4>Розчинення філеру</h4>
+            <ul class="price-list">
+              <li><span class="service">Розчинення філеру</span> <span class="price" data-price-id="filler-dissolve">2&nbsp;500&nbsp;грн</span></li>
+              <li><span class="service">Часткове розчинення</span> <span class="price" data-price-id="filler-dissolve-partial">2&nbsp;000&nbsp;грн</span></li>
+            </ul>
+          </div>
+        </details>
+        <details class="acc">
+          <summary><h3>Контурна пластика обличчя</h3></summary>
+          <div class="acc-body">
+            <h4>Celosome (Корея)</h4>
+            <ul class="price-list">
+              <li><span class="service">1 мл</span> <span class="price" data-price-id="contour-celosome-1">4&nbsp;800&nbsp;грн</span></li>
+              <li><span class="service">2 мл</span> <span class="price" data-price-id="contour-celosome-2">8&nbsp;500&nbsp;грн</span></li>
+              <li><span class="service">3 мл</span> <span class="price" data-price-id="contour-celosome-3">11&nbsp;500&nbsp;грн</span></li>
+              <li><span class="service">4 мл</span> <span class="price" data-price-id="contour-celosome-4">13&nbsp;500&nbsp;грн</span></li>
+            </ul>
+            <h4>Neauvia Intense (Італія)</h4>
+            <ul class="price-list">
+              <li><span class="service">1 мл</span> <span class="price" data-price-id="contour-neauvia-1">8&nbsp;900&nbsp;грн</span></li>
+              <li><span class="service">2 мл</span> <span class="price" data-price-id="contour-neauvia-2">17&nbsp;000&nbsp;грн</span></li>
+              <li><span class="service">3 мл</span> <span class="price" data-price-id="contour-neauvia-3">20&nbsp;000&nbsp;грн</span></li>
+            </ul>
+          </div>
+        </details>
+        <details class="acc">
+          <summary><h3>Робота з носогубними складками</h3></summary>
+          <div class="acc-body">
+            <ul class="price-list">
+              <li><span class="service">Celosome Soft (Корея) <span class="service-meta">1 мл</span></span> <span class="price" data-price-id="nasolabial-celosome-soft">5&nbsp;500&nbsp;грн</span></li>
+              <li><span class="service">Belotero Soft Lidocaine (Німеччина) <span class="service-meta">1 мл</span></span> <span class="price" data-price-id="nasolabial-belotero">7&nbsp;500&nbsp;грн</span></li>
+            </ul>
+          </div>
+        </details>
+        <details class="acc">
+          <summary><h3>Заповнення кілець «Венери» та бланшування поверхневих зморшок</h3></summary>
+          <div class="acc-body">
+            <ul class="price-list">
+              <li><span class="service">Belotero Soft Lidocaine (Німеччина) <span class="service-meta">1 мл</span></span> <span class="price" data-price-id="venus-belotero">7&nbsp;500&nbsp;грн</span></li>
+              <li><span class="service">Restylane Skinboosters Vital Light Lidocaine</span> <span class="price" data-price-id="venus-restylane">6&nbsp;000&nbsp;грн</span></li>
+            </ul>
+          </div>
+        </details>
+        <details class="acc">
+          <summary><h3>Заповнення носослізної борозни</h3></summary>
+          <div class="acc-body">
+            <ul class="price-list">
+              <li><span class="service">Belotero Soft Lidocaine (Німеччина) <span class="service-meta">1 мл</span></span> <span class="price" data-price-id="tear-belotero">7&nbsp;500&nbsp;грн</span></li>
+              <li><span class="service">Restylane Skinboosters Vital Light Lidocaine <span class="service-meta">1 мл</span></span> <span class="price" data-price-id="tear-restylane">6&nbsp;500&nbsp;грн</span></li>
+              <li><span class="service">Juvederm Volite з лідокаїном <span class="service-meta">1 мл</span></span> <span class="price" data-price-id="tear-volite">7&nbsp;500&nbsp;грн</span></li>
+              <li><span class="service">Prostrolane Blanc-B <span class="service-meta">2 мл</span></span> <span class="price" data-price-id="tear-prostrolane">7&nbsp;500&nbsp;грн</span></li>
+            </ul>
+          </div>
+        </details>
+        <details class="acc">
+          <summary><h3>Плазмотерапія</h3></summary>
+          <div class="acc-body">
+            <ul class="price-list">
+              <li><span class="service">1 пробірка</span> <span class="price" data-price-id="plasma-1">2&nbsp;800&nbsp;грн</span></li>
+              <li><span class="service">2 пробірки</span> <span class="price" data-price-id="plasma-2">3&nbsp;500&nbsp;грн</span></li>
+              <li><span class="service">4 пробірки</span> <span class="price" data-price-id="plasma-4">4&nbsp;500&nbsp;грн</span></li>
+              <li><span class="service">6 пробірок</span> <span class="price" data-price-id="plasma-6">5&nbsp;500&nbsp;грн</span></li>
+            </ul>
+          </div>
+        </details>
+        <details class="acc">
+          <summary><h3>Колагеностимуляція ін’єкційна</h3></summary>
+          <div class="acc-body">
+            <ul class="price-list">
+              <li><span class="service">Karisma <span class="service-meta">1 шприц</span></span> <span class="price" data-price-id="collagen-karisma-1">8&nbsp;700&nbsp;грн</span></li>
+              <li><span class="service">Karisma <span class="service-meta">2 шприци одразу</span></span> <span class="price" data-price-id="collagen-karisma-2">17&nbsp;000&nbsp;грн</span></li>
+              <li><span class="service">Couri <span class="service-meta">1 шприц</span></span> <span class="price" data-price-id="collagen-couri-1">8&nbsp;700&nbsp;грн</span></li>
+              <li><span class="service">Couri <span class="service-meta">2 шприци одразу</span></span> <span class="price" data-price-id="collagen-couri-2">17&nbsp;000&nbsp;грн</span></li>
+            </ul>
+            <h4>Скінбустер Pink PLLA (на основі полімолочної кислоти)</h4>
+            <ul class="price-list">
+              <li><span class="service">Обличчя, шия, декольте, очі</span> <span class="price" data-price-id="pinkplla-full">8&nbsp;500&nbsp;грн</span></li>
+              <li><span class="service">Обличчя + шия</span> <span class="price" data-price-id="pinkplla-face-neck">7&nbsp;500&nbsp;грн</span></li>
+              <li><span class="service">Обличчя</span> <span class="price" data-price-id="pinkplla-face">6&nbsp;800&nbsp;грн</span></li>
+            </ul>
+          </div>
+        </details>
+        <details class="acc">
+          <summary><h3>Ботулінотерапія</h3></summary>
+          <div class="acc-body">
+            <p>Корекція мімічних зморшок. У роботі лише сертифіковані препарати: Medinox, Dysport, Xeomin.</p>
+            <p class="term">Для чоловіків: <span class="price" data-price-id="bt-men-surcharge">+500&nbsp;грн</span> за кожну зону через посилене дозування (діє для всіх препаратів: Medinox, Dysport, Xeomin).</p>
+            <h4>Medinox (Корея)</h4>
+            <ul class="price-list">
+              <li><span class="service">Чоло + міжбрів’я</span> <span class="price" data-price-id="bt-medinox-forehead">4&nbsp;500&nbsp;грн</span></li>
+              <li><span class="service">Гусині лапки + ніс</span> <span class="price" data-price-id="bt-medinox-crowfeet-nose">3&nbsp;500&nbsp;грн</span></li>
+              <li><span class="service">Міжбрів’я та очі окремо</span> <span class="price" data-price-id="bt-medinox-glabella-eyes">3&nbsp;000&nbsp;грн</span></li>
+              <li><span class="service">Чоло + міжбрів’я + очі + «кролячі» зморшки (ніс)</span> <span class="price" data-price-id="bt-medinox-upper">6&nbsp;000&nbsp;грн</span></li>
+              <li><span class="service">Підборіддя, кисетні зморшки, підіймачі кутиків вуст, вуста</span> <span class="price" data-price-id="bt-medinox-chin-lips">1&nbsp;800&nbsp;грн</span></li>
+              <li><span class="service">Звуження ніздрів / підняття кінчика носа</span> <span class="price" data-price-id="bt-medinox-nostrils">2&nbsp;500&nbsp;грн</span></li>
+              <li><span class="service">Гінгівальна посмішка</span> <span class="price" data-price-id="bt-medinox-gummy">2&nbsp;500&nbsp;грн</span></li>
+              <li><span class="service">Ліфтинг Нефертіті (шия та овал обличчя)</span> <span class="price" data-price-id="bt-medinox-nefertiti">7&nbsp;000&nbsp;грн</span></li>
+              <li><span class="service">Жувальні м’язи</span> <span class="price" data-price-id="bt-medinox-masseter">4&nbsp;500&nbsp;грн</span></li>
+              <li><span class="service">Повністю full face (верхня та нижня третина)</span> <span class="price" data-price-id="bt-medinox-fullface">8&nbsp;800&nbsp;грн</span></li>
+              <li><span class="service">Full face + шия</span> <span class="price" data-price-id="bt-medinox-fullface-neck">13&nbsp;000&nbsp;грн</span></li>
+            </ul>
+            <h4>Dysport (Велика Британія) / Xeomin (Німеччина)</h4>
+            <p>Однакові ціни.</p>
+            <ul class="price-list">
+              <li><span class="service">Чоло + міжбрів’я</span> <span class="price" data-price-id="bt-dx-forehead">6&nbsp;000&nbsp;грн</span></li>
+              <li><span class="service">Гусині лапки + ніс</span> <span class="price" data-price-id="bt-dx-crowfeet-nose">4&nbsp;500&nbsp;грн</span></li>
+              <li><span class="service">Міжбрів’я або гусині лапки окремо</span> <span class="price" data-price-id="bt-dx-glabella-or-crowfeet">4&nbsp;000&nbsp;грн</span></li>
+              <li><span class="service">Чоло + міжбрів’я + очі + ніс</span> <span class="price" data-price-id="bt-dx-upper">8&nbsp;000&nbsp;грн</span></li>
+              <li><span class="service">Підборіддя, кисетні зморшки, підіймачі кутиків вуст, вуста</span> <span class="price" data-price-id="bt-dx-chin-lips">2&nbsp;000&nbsp;грн</span></li>
+              <li><span class="service">Звуження ніздрів / підняття кінчика носа</span> <span class="price" data-price-id="bt-dx-nostrils">4&nbsp;000&nbsp;грн</span></li>
+              <li><span class="service">Гінгівальна посмішка</span> <span class="price" data-price-id="bt-dx-gummy">3&nbsp;000&nbsp;грн</span></li>
+              <li><span class="service">Жувальні м’язи</span> <span class="price" data-price-id="bt-dx-masseter">6&nbsp;000&nbsp;грн</span></li>
+              <li><span class="service">Овал обличчя + шия</span> <span class="price" data-price-id="bt-dx-oval-neck">9&nbsp;000&nbsp;грн</span></li>
+              <li><span class="service">Повністю full face (верхня та нижня третина)</span> <span class="price" data-price-id="bt-dx-fullface">10&nbsp;800&nbsp;грн</span></li>
+              <li><span class="service">Full face + шия</span> <span class="price" data-price-id="bt-dx-fullface-neck">15&nbsp;000&nbsp;грн</span></li>
+            </ul>
+          </div>
+        </details>
+        <details class="acc">
+          <summary><h3>Лікування гіпергідрозу</h3></summary>
+          <div class="acc-body">
+            <ul class="price-list">
+              <li><span class="service">Rentox</span> <span class="price" data-price-id="hyperhidrosis-rentox">7&nbsp;000&nbsp;грн</span></li>
+              <li><span class="service">Medinox</span> <span class="price" data-price-id="hyperhidrosis-medinox">12&nbsp;000&nbsp;грн</span></li>
+              <li><span class="service">Dysport</span> <span class="price" data-price-id="hyperhidrosis-dysport">13&nbsp;000&nbsp;грн</span></li>
+            </ul>
+            <p class="term">Додаткові одиниці за потреби оплачуються окремо: 1 од. = <span class="price" data-price-id="hyperhidrosis-unit">70–100&nbsp;грн</span> (залежно від препарату).</p>
+          </div>
+        </details>
+        <details class="acc">
+          <summary><h3>Біоревіталізація</h3></summary>
+          <div class="acc-body">
+            <ul class="price-list">
+              <li><span class="service">Neauvia Hydro Deluxe (Італія) <span class="service-meta">ущільнення, зволоження, ліфтинг</span></span> <span class="price" data-price-id="bio-neauvia-hydro">5&nbsp;800&nbsp;грн</span></li>
+              <li><span class="service">Prostrolane Inner-B (1×2 мл) <span class="service-meta">ліфтинг, ліполітична біоревіталізація</span></span> <span class="price" data-price-id="bio-prostrolane-inner">5&nbsp;500&nbsp;грн</span></li>
+              <li><span class="service">RRS HA Long Lasting (Корея)</span> <span class="price" data-price-id="bio-rrs-long">6&nbsp;800&nbsp;грн</span></li>
+              <li><span class="service">Jalupro HMW (Швейцарія)</span> <span class="price" data-price-id="bio-jalupro-hmw">5&nbsp;800&nbsp;грн</span></li>
+              <li><span class="service">Jalupro Plus (Швейцарія)</span> <span class="price" data-price-id="bio-jalupro-plus">5&nbsp;000&nbsp;грн</span></li>
+              <li><span class="service">Teosyal Redensity I, обличчя (Швейцарія) <span class="service-meta">3 мл</span></span> <span class="price" data-price-id="bio-teosyal-redensity">9&nbsp;000&nbsp;грн</span></li>
+              <li><span class="service">Restylane Vital</span> <span class="price" data-price-id="bio-restylane-vital">6&nbsp;000&nbsp;грн</span></li>
+              <li><span class="service">Mastelli Plinest (Італія) <span class="service-meta">2 мл</span></span> <span class="price" data-price-id="bio-plinest">6&nbsp;000&nbsp;грн</span></li>
+              <li><span class="service">Jalupro Super Hydro (Швейцарія)</span> <span class="price" data-price-id="bio-jalupro-hydro">6&nbsp;800&nbsp;грн</span></li>
+              <li><span class="service">Plenhyage XL Strong <span class="service-meta">25 мг/мл, 2 мл (50 мг)</span></span> <span class="price" data-price-id="bio-plenhyage">6&nbsp;800&nbsp;грн</span></li>
+              <li><span class="service">Meso-Wharton P199 <span class="service-meta">1,5 мл</span></span> <span class="price" data-price-id="bio-wharton">8&nbsp;000&nbsp;грн</span></li>
+              <li><span class="service">Meso-Xanthin F199 <span class="service-meta">1,5 мл</span></span> <span class="price" data-price-id="bio-xanthin">8&nbsp;000&nbsp;грн</span></li>
+            </ul>
+            <p class="term"><strong>Знижка −5%</strong> на курс при оплаті від 3 процедур одразу.</p>
+            <h4>Зона навколо очей</h4>
+            <ul class="price-list">
+              <li><span class="service">AMI Eyes (Корея) <span class="service-meta">2 мл</span></span> <span class="price" data-price-id="eyes-ami">3&nbsp;500&nbsp;грн</span></li>
+              <li><span class="service">TwAc Eyes (Велика Британія) <span class="service-meta">1 мл</span></span> <span class="price" data-price-id="eyes-twac">4&nbsp;000&nbsp;грн</span></li>
+              <li><span class="service">RRS I (Іспанія) <span class="service-meta">1,5 мл</span></span> <span class="price" data-price-id="eyes-rrs">2&nbsp;000&nbsp;грн</span></li>
+            </ul>
+          </div>
+        </details>
+        <details class="acc">
+          <summary><h3>Мезотерапія</h3></summary>
+          <div class="acc-body">
+            <h4>Мезотерапія обличчя та тіла Pluryal Mesoline (Люксембург)</h4>
+            <ul class="price-list">
+              <li><span class="service">Pluryal Mesoline Refresh</span> <span class="price" data-price-id="meso-pluryal-refresh">3&nbsp;500&nbsp;грн</span></li>
+              <li><span class="service">Pluryal Mesoline Shine</span> <span class="price" data-price-id="meso-pluryal-shine">3&nbsp;500&nbsp;грн</span></li>
+              <li><span class="service">Pluryal Mesoline Tight</span> <span class="price" data-price-id="meso-pluryal-tight">3&nbsp;500&nbsp;грн</span></li>
+              <li><span class="service">Pluryal Mesoline Clear</span> <span class="price" data-price-id="meso-pluryal-clear">3&nbsp;500&nbsp;грн</span></li>
+            </ul>
+            <h4>Інші мезотерапевтичні процедури</h4>
+            <ul class="price-list">
+              <li><span class="service">Мезотерапія: робота з розацеа</span> <span class="price" data-price-id="meso-rosacea">3&nbsp;000&nbsp;грн</span></li>
+              <li><span class="service">Мезотерапія: робота з акне <span class="service-meta">1 мл</span></span> <span class="price" data-price-id="meso-acne-1">1&nbsp;500&nbsp;грн</span></li>
+              <li><span class="service">Мезотерапія: робота з акне <span class="service-meta">2 мл</span></span> <span class="price" data-price-id="meso-acne-2">1&nbsp;800&nbsp;грн</span></li>
+              <li><span class="service">Мезотерапія волосистої частини голови</span> <span class="price" data-price-id="meso-scalp">від 1&nbsp;600 до 2&nbsp;500&nbsp;грн</span></li>
+              <li><span class="service">DR. CYJ (мезо, Корея) <span class="service-meta">1 мл</span></span> <span class="price" data-price-id="meso-drcyj">4&nbsp;500&nbsp;грн</span></li>
+              <li><span class="service">Плазмотерапія волосистої частини голови <span class="service-meta">1 процедура, 1 пробірка</span></span> <span class="price" data-price-id="meso-plasma-scalp">2&nbsp;500&nbsp;грн</span></li>
+            </ul>
+            <p class="term"><strong>Пакетна пропозиція:</strong> при оплаті курсу від 3 процедур знижка −10%.</p>
+          </div>
+        </details>
+        <details class="acc">
+          <summary><h3>Ліполітична дія</h3></summary>
+          <div class="acc-body">
+            <ul class="price-list">
+              <li><span class="service">Ліполітик Light Fit (обличчя та тіло) <span class="service-meta">1 флакон 2 мл</span></span> <span class="price" data-price-id="lipo-lightfit">1&nbsp;500&nbsp;грн</span></li>
+              <li><span class="service">Тріада (обличчя та тіло)</span> <span class="price" data-price-id="lipo-triad">4&nbsp;500&nbsp;грн</span></li>
+              <li><span class="service">Коктейль прямий + непрямий ліполітик (Simildiet) <span class="service-meta">7,5 мл</span></span> <span class="price" data-price-id="lipo-simildiet">2&nbsp;800&nbsp;грн</span></li>
+              <li><span class="service">Ліполітична біоревіталізація (PBS Medium) <span class="service-meta">курсова процедура</span></span> <span class="price" data-price-id="lipo-pbs">10&nbsp;000&nbsp;грн</span></li>
+            </ul>
+          </div>
+        </details>
+        <p class="panel-cta"><a class="btn btn-primary" href="https://www.instagram.com/kosmetolog__kostenko" target="_blank" rel="noopener">Записатися</a></p>
+      </section>
+
+      <section class="tab-panel" id="apparatus">
+        <h2>Апаратна косметологія</h2>
+            <p class="panel-note">Усе обладнання сертифіковане.</p>
+        <details class="acc" open>
+          <summary><h3>Мікроголковий фракційний RF-ліфтинг (апарат, США)</h3></summary>
+          <div class="acc-body">
+            <p>Процедура проводиться курсом: 2–3 процедури, 1 раз на 5 тижнів.</p>
+            <ul class="price-list">
+              <li><span class="service">Нижня та верхня частини обличчя (без чола та очей)</span> <span class="price" data-price-id="rfm-lower-upper">5&nbsp;000&nbsp;грн</span></li>
+              <li><span class="service">Все обличчя</span> <span class="price" data-price-id="rfm-face">6&nbsp;000&nbsp;грн</span></li>
+              <li><span class="service">Шия</span> <span class="price" data-price-id="rfm-neck">5&nbsp;000&nbsp;грн</span></li>
+              <li><span class="service">Декольте</span> <span class="price" data-price-id="rfm-decollete">5&nbsp;000&nbsp;грн</span></li>
+              <li><span class="service">Обличчя + шия</span> <span class="price" data-price-id="rfm-face-neck">8&nbsp;500&nbsp;грн</span></li>
+              <li><span class="service">Обличчя + шия + декольте</span> <span class="price" data-price-id="rfm-face-neck-decollete">10&nbsp;000&nbsp;грн</span></li>
+              <li><span class="service">Живіт</span> <span class="price" data-price-id="rfm-belly">6&nbsp;000&nbsp;грн</span></li>
+              <li><span class="service">Сідниці</span> <span class="price" data-price-id="rfm-buttocks">8&nbsp;000&nbsp;грн</span></li>
+              <li><span class="service">Коліна; лікті</span> <span class="price" data-price-id="rfm-knees-elbows">4&nbsp;000&nbsp;грн</span></li>
+              <li><span class="service">Окремо зона навколо очей</span> <span class="price" data-price-id="rfm-eyes">4&nbsp;500&nbsp;грн</span></li>
+              <li><span class="service">Внутрішня поверхня рук</span> <span class="price" data-price-id="rfm-arms-inner">5&nbsp;500–6&nbsp;000&nbsp;грн</span></li>
+              <li><span class="service">Внутрішня поверхня стегон</span> <span class="price" data-price-id="rfm-thighs-inner">7&nbsp;000–8&nbsp;000&nbsp;грн</span></li>
+              <li><span class="service">Стрії, рубці</span> <span class="price" data-price-id="rfm-stretch-scars">від 3&nbsp;500 до 5&nbsp;500&nbsp;грн</span></li>
+            </ul>
+            <p class="term">Комбінація з плазмотерапією: <span class="price" data-price-id="rfm-plasma-addon">+2&nbsp;500&nbsp;грн</span>.</p>
+          </div>
+        </details>
+        <details class="acc">
+          <summary><h3>SMAS-ліфтинг (апарат Zemits, США)</h3></summary>
+          <div class="acc-body">
+            <p>Процедура проводиться 1 раз на рік.</p>
+            <ul class="price-list">
+              <li><span class="service">Малярна ділянка</span> <span class="price" data-price-id="smas-malar">3&nbsp;500&nbsp;грн</span></li>
+              <li><span class="service">Підборіддя (вся зона)</span> <span class="price" data-price-id="smas-chin">4&nbsp;500&nbsp;грн</span></li>
+              <li><span class="service">Середня третина обличчя (носогубні складки + вилиці)</span> <span class="price" data-price-id="smas-middle">5&nbsp;500&nbsp;грн</span></li>
+              <li><span class="service">Нижня третина обличчя</span> <span class="price" data-price-id="smas-lower">5&nbsp;500&nbsp;грн</span></li>
+              <li><span class="service">Середня та нижня третина обличчя з підборіддям <span class="service-meta">протокол 500–600 ліній</span></span> <span class="price" data-price-id="smas-middle-lower-chin">12&nbsp;000&nbsp;грн</span></li>
+              <li><span class="service">Шия</span> <span class="price" data-price-id="smas-neck">6&nbsp;000&nbsp;грн</span></li>
+            </ul>
+          </div>
+        </details>
+        <details class="acc">
+          <summary><h3>Мікрострумова терапія</h3></summary>
+          <div class="acc-body">
+            <p>Процедуру виконують Юлія та Анастасія.</p>
+            <ul class="price-list">
+              <li><span class="service">Мікрострумова терапія обличчя та шиї + маска за типом шкіри + сироватка <span class="service-meta">1 год 20 хв</span></span> <span class="price" data-price-id="micro-full">1&nbsp;500&nbsp;грн</span></li>
+              <li><span class="service">Мікрострумова терапія <span class="service-meta">30 хв</span></span> <span class="price" data-price-id="micro-30">800&nbsp;грн</span></li>
+              <li><span class="service">Мікрострумова терапія <span class="service-meta">15 хв</span></span> <span class="price" data-price-id="micro-15">500&nbsp;грн</span></li>
+            </ul>
+            <p class="term"><strong>Знижка −10%</strong> при оплаті курсу з 10 процедур.</p>
+          </div>
+        </details>
+        <details class="acc">
+          <summary><h3>RF-ліфтинг обличчя та шиї</h3></summary>
+          <div class="acc-body">
+            <ul class="price-list">
+              <li><span class="service">RF-ліфтинг обличчя та шиї + маска + сироватка <span class="service-meta">1 год</span></span> <span class="price" data-price-id="rf-face-neck">1&nbsp;500&nbsp;грн</span></li>
+            </ul>
+            <p class="term"><strong>Знижка −10%</strong> при оплаті курсу з 10 процедур одразу.</p>
+          </div>
+        </details>
+        <details class="acc">
+          <summary><h3>IPL-терапія</h3></summary>
+          <div class="acc-body">
+            <h4>Фотоомолодження: видалення судин та пігментації</h4>
+            <ul class="price-list">
+              <li><span class="service">Крила носа</span> <span class="price" data-price-id="ipl-v-nose">1&nbsp;500&nbsp;грн</span></li>
+              <li><span class="service">Чоло</span> <span class="price" data-price-id="ipl-v-forehead">1&nbsp;500&nbsp;грн</span></li>
+              <li><span class="service">Підборіддя</span> <span class="price" data-price-id="ipl-v-chin">1&nbsp;500&nbsp;грн</span></li>
+              <li><span class="service">Щоки</span> <span class="price" data-price-id="ipl-v-cheeks">2&nbsp;000&nbsp;грн</span></li>
+              <li><span class="service">Все обличчя</span> <span class="price" data-price-id="ipl-v-face">3&nbsp;000&nbsp;грн</span></li>
+              <li><span class="service">Гемангіоми та плями не більше 2×2 см</span> <span class="price" data-price-id="ipl-v-spots">1&nbsp;000&nbsp;грн</span></li>
+            </ul>
+            <h4>Фотоомолодження: акне та постакне</h4>
+            <ul class="price-list">
+              <li><span class="service">Все обличчя</span> <span class="price" data-price-id="ipl-a-face">3&nbsp;000&nbsp;грн</span></li>
+              <li><span class="service">Обличчя + шия</span> <span class="price" data-price-id="ipl-a-face-neck">3&nbsp;500&nbsp;грн</span></li>
+              <li><span class="service">Обличчя + шия + декольте</span> <span class="price" data-price-id="ipl-a-face-neck-decollete">4&nbsp;000&nbsp;грн</span></li>
+              <li><span class="service">Сідниці</span> <span class="price" data-price-id="ipl-a-buttocks">4&nbsp;000&nbsp;грн</span></li>
+              <li><span class="service">Спина</span> <span class="price" data-price-id="ipl-a-back">4&nbsp;000&nbsp;грн</span></li>
+              <li><span class="service">Плечі</span> <span class="price" data-price-id="ipl-a-shoulders">4&nbsp;000&nbsp;грн</span></li>
+              <li><span class="service">Щоки</span> <span class="price" data-price-id="ipl-a-cheeks">2&nbsp;000&nbsp;грн</span></li>
+              <li><span class="service">Чоло або підборіддя</span> <span class="price" data-price-id="ipl-a-forehead-chin">1&nbsp;500&nbsp;грн</span></li>
+            </ul>
+            <p>Усе якісне та сертифіковане.</p>
+          </div>
+        </details>
+        <p class="panel-cta"><a class="btn btn-primary" href="https://www.instagram.com/kosmetolog__kostenko" target="_blank" rel="noopener">Записатися</a></p>
+      </section>
+    </div>
+  </main>
+
+  <!-- Футер: одинаковый на всех 5 страницах, меняется только aria-current -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div>
+        <p class="footer-name">Простір краси<br><span lang="en">Beauty room by Kostenko Cosmetology</span></p>
+      </div>
+      <nav aria-label="Меню в підвалі">
+        <ul>
+          <li><a href="index.html">Головна</a></li>
+          <li><a href="cosmetology.html" aria-current="page">Косметологія</a></li>
+          <li><a href="massage.html">Масаж</a></li>
+          <li><a href="reviews.html">Відгуки</a></li>
+          <li><a href="contacts.html">Контакти</a></li>
+        </ul>
+      </nav>
+      <div class="footer-contacts">
+        <address>м.&nbsp;Дніпро, вул. Михайла Грушевського, 16</address>
+        <!-- TODO: при необходимости добавить точные часы -->
+        <p>За попереднім записом</p>
+        <p><a href="https://www.instagram.com/kosmetolog__kostenko" target="_blank" rel="noopener">Instagram</a></p>
+        <!-- TODO: Telegram — раскомментировать, когда будет ссылка
+        <a href="https://t.me/...">Telegram</a> -->
+        <!-- TODO: телефон — раскомментировать, когда будет номер
+        <a href="tel:+380...">+380 ...</a> -->
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
