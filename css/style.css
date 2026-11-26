@@ -1,9 +1,9 @@
 /* Простір краси · Beauty room by Kostenko Cosmetology
-   Общий стиль всех страниц. Mobile-first. Палитра v3 (смарагд + насыщенное золото). */
+   Общий стиль всех страниц. Mobile-first. Палитра v4 (тёмный зелёный + золото логотипа). */
 
 :root {
-  --emerald-main: #00674F;
-  --emerald-hover: #007A5E;
+  --emerald-main: #163B2A;
+  --emerald-hover: #23573F;
   --bg-white: #FFFFFF;
   --bg-mint: #EFF5F2;
   --text-main: #162922;
@@ -272,7 +272,7 @@ html:not(.js) .site-header { position: static; }
 }
 .direction h3 { margin-bottom: 14px; }
 .direction ul { list-style: none; margin-bottom: 18px; color: var(--text-muted); }
-.direction li { padding: 7px 0; border-bottom: 1px solid rgba(0, 103, 79, .18); line-height: 1.45; }
+.direction li { padding: 7px 0; border-bottom: 1px solid rgba(22, 59, 42, .18); line-height: 1.45; }
 .direction .text-link { margin-top: auto; font-weight: 600; }
 
 /* ---------- Простір ---------- */
@@ -362,8 +362,8 @@ html:not(.js) .site-header { position: static; }
 .gallery-grid figcaption { margin-top: 6px; text-align: center; font-size: .9375rem; color: var(--text-muted); }
 
 /* ---------- Каталог: аккордеоны ---------- */
-.acc { border-top: 1px solid rgba(0, 103, 79, .3); }
-.acc:last-of-type { border-bottom: 1px solid rgba(0, 103, 79, .3); }
+.acc { border-top: 1px solid rgba(22, 59, 42, .3); }
+.acc:last-of-type { border-bottom: 1px solid rgba(22, 59, 42, .3); }
 .acc summary {
   display: flex;
   align-items: center;
@@ -401,7 +401,7 @@ html:not(.js) .site-header { position: static; }
   gap: 4px 16px;
   flex-wrap: wrap;
   padding: 10px 0;
-  border-bottom: 1px solid rgba(0, 103, 79, .16);
+  border-bottom: 1px solid rgba(22, 59, 42, .16);
 }
 .service { flex: 1 1 200px; min-width: 0; }
 .service-meta { display: block; color: var(--text-muted); font-size: .875rem; }
