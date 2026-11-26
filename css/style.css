@@ -1,15 +1,15 @@
 /* Простір краси · Beauty room by Kostenko Cosmetology
-   Общий стиль всех страниц. Mobile-first. Палитра v2. */
+   Общий стиль всех страниц. Mobile-first. Палитра v3 (смарагд + насыщенное золото). */
 
 :root {
-  --emerald-main: #236B52;
-  --emerald-hover: #2E8266;
+  --emerald-main: #00674F;
+  --emerald-hover: #007A5E;
   --bg-white: #FFFFFF;
   --bg-mint: #EFF5F2;
   --text-main: #162922;
   --text-muted: #4B6158;
-  --gold-main: #C8AE5B;
-  --gold-hover: #B39640;
+  --gold-main: #EECB36;
+  --gold-hover: #DBB824;
 
   --font-display: "Oranienbaum", "Palatino Linotype", "Book Antiqua", Georgia, serif;
   --font-text: "Commissioner", "Segoe UI", system-ui, -apple-system, Roboto, Arial, sans-serif;
@@ -53,7 +53,7 @@ ul { margin: 0; padding: 0; }
 address { font-style: normal; }
 
 a { color: var(--emerald-main); text-underline-offset: 3px; }
-/* #2E8266 на мятном даёт 4.22:1 (ниже AA), поэтому ссылка при hover не меняет цвет */
+/* --emerald-hover предназначен для фона; ссылка при hover не меняет цвет */
 a:hover { text-decoration-thickness: 2px; }
 
 :focus-visible { outline: 3px solid var(--emerald-main); outline-offset: 3px; }
@@ -130,6 +130,8 @@ a:hover { text-decoration-thickness: 2px; }
   max-width: none;
   margin-left: -36.06%;
   margin-top: -47.96%;
+  /* основное золото файла #E2CA63 с фильтром даёт тот же тон, что --gold-main */
+  filter: saturate(1.45);
 }
 
 /* ---------- Шапка ---------- */
@@ -139,7 +141,7 @@ a:hover { text-decoration-thickness: 2px; }
   z-index: 100;
   background: var(--emerald-main);
   color: var(--bg-white);
-  border-bottom: 1px solid rgba(200, 174, 91, .55);
+  border-bottom: 1px solid rgba(238, 203, 54, .55);
 }
 
 /* Якоря и фокус не прячутся под закреплённой шапкой */
@@ -270,7 +272,7 @@ html:not(.js) .site-header { position: static; }
 }
 .direction h3 { margin-bottom: 14px; }
 .direction ul { list-style: none; margin-bottom: 18px; color: var(--text-muted); }
-.direction li { padding: 7px 0; border-bottom: 1px solid rgba(35, 107, 82, .18); line-height: 1.45; }
+.direction li { padding: 7px 0; border-bottom: 1px solid rgba(0, 103, 79, .18); line-height: 1.45; }
 .direction .text-link { margin-top: auto; font-weight: 600; }
 
 /* ---------- Простір ---------- */
@@ -297,6 +299,7 @@ html:not(.js) .site-header { position: static; }
 .contacts dt { color: var(--text-muted); font-size: .9375rem; }
 .contacts dd { margin: 0 0 14px; font-size: 1.125rem; overflow-wrap: anywhere; }
 .contacts .schedule { font-family: var(--font-display); font-size: 1.75rem; line-height: 1.2; }
+.contacts dd a { display: inline-block; padding: 4px 0; font-weight: 600; }
 .contacts .btn { width: 100%; }
 
 .map { min-height: 300px; }
@@ -350,9 +353,17 @@ html:not(.js) .site-header { position: static; }
 .panel-note { color: var(--text-muted); }
 .panel-cta { margin-top: 24px; }
 
+/* ---------- Фото процедур под прайсом ---------- */
+.gallery { margin-top: 32px; }
+.gallery h3 { margin-bottom: 12px; font-size: 1.375rem; }
+.gallery-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 10px; list-style: none; }
+.gallery-grid figure { margin: 0; }
+.gallery-grid img { width: 100%; aspect-ratio: 4 / 5; object-fit: cover; border-radius: var(--radius); }
+.gallery-grid figcaption { margin-top: 6px; text-align: center; font-size: .9375rem; color: var(--text-muted); }
+
 /* ---------- Каталог: аккордеоны ---------- */
-.acc { border-top: 1px solid rgba(35, 107, 82, .3); }
-.acc:last-of-type { border-bottom: 1px solid rgba(35, 107, 82, .3); }
+.acc { border-top: 1px solid rgba(0, 103, 79, .3); }
+.acc:last-of-type { border-bottom: 1px solid rgba(0, 103, 79, .3); }
 .acc summary {
   display: flex;
   align-items: center;
@@ -390,7 +401,7 @@ html:not(.js) .site-header { position: static; }
   gap: 4px 16px;
   flex-wrap: wrap;
   padding: 10px 0;
-  border-bottom: 1px solid rgba(35, 107, 82, .16);
+  border-bottom: 1px solid rgba(0, 103, 79, .16);
 }
 .service { flex: 1 1 200px; min-width: 0; }
 .service-meta { display: block; color: var(--text-muted); font-size: .875rem; }
@@ -410,12 +421,11 @@ html:not(.js) .site-header { position: static; }
 .lead-block p { font-size: 1.125rem; }
 .contacts-page h1 { margin-bottom: 22px; }
 
-/* ---------- Сетка будущих отзывов (блок скрыт атрибутом hidden) ---------- */
+/* ---------- Сетка отзывов: скриншоты не обрезаются, сохраняют свои пропорции ---------- */
 [hidden] { display: none !important; }
-.reviews-grid { display: grid; gap: 20px; }
-.review { margin: 0; padding: 18px 0 0; border-top: 2px solid var(--gold-main); }
-.review blockquote { margin: 0 0 10px; }
-.review figcaption { color: var(--text-muted); }
+.reviews-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); align-items: start; gap: 12px; }
+.review { margin: 0; }
+.review img { width: 100%; height: auto; border-radius: var(--radius); }
 
 /* ---------- Футер ---------- */
 .site-footer {
@@ -455,6 +465,8 @@ html:not(.js) .site-header { position: static; }
   .person { grid-template-columns: minmax(0, 240px) minmax(0, 1fr); gap: 24px; }
 
   .space-photos { grid-template-columns: 1fr 1fr; }
+
+  .gallery-grid { grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 12px; }
 }
 
 /* ---------- ≥ 768px ---------- */
@@ -473,7 +485,7 @@ html:not(.js) .site-header { position: static; }
   .hero-mark .logo-crop { width: 100%; max-width: 440px; margin-left: auto; }
 
   .page-head-grid { grid-template-columns: minmax(0, 1fr) 240px; align-items: center; gap: 40px; }
-  .reviews-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+  .reviews-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 20px; }
 
   .directions { grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 24px; }
   .direction h3 { font-size: 1.5rem; min-height: 2.24em; }
