@@ -357,6 +357,8 @@ html:not(.js) .site-header { position: static; }
 .gallery { margin-top: 32px; }
 .gallery h3 { margin-bottom: 12px; font-size: 1.375rem; }
 .gallery-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 10px; list-style: none; }
+/* Три фото: на телефоне третье по центру, на широком экране три в ряд */
+.gallery-grid-three li:last-child { grid-column: 1 / -1; justify-self: center; width: calc(50% - 5px); }
 .gallery-grid figure { margin: 0; }
 .gallery-grid img { width: 100%; aspect-ratio: 4 / 5; object-fit: cover; border-radius: var(--radius); }
 .gallery-grid figcaption { margin-top: 6px; text-align: center; font-size: .9375rem; color: var(--text-muted); }
@@ -467,6 +469,8 @@ html:not(.js) .site-header { position: static; }
   .space-photos { grid-template-columns: 1fr 1fr; }
 
   .gallery-grid { grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 12px; }
+  .gallery-grid-three { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+  .gallery-grid-three li:last-child { grid-column: auto; width: auto; justify-self: stretch; }
 }
 
 /* ---------- ≥ 768px ---------- */
